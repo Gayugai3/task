@@ -6,18 +6,18 @@ import HorizontalLineWithCircles from "./components/HorizontalLineWithCircles";
 
 function App() {
   return (
-    <>
+    <div className="App">
       <Navbar />
       <FaEyeIcon />
       <Searchbar />
       <HorizontalLineWithCircles />
-    </>
+    </div>
   );
 }
 
 const FaEyeIcon = () => (
   <div className="eye-icon">
-    <FaEye style={{ fontSize: "30px" }} /> 
+    <FaEye style={{ fontSize: "30px" }} />
   </div>
 );
 export default App;
