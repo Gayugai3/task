@@ -2,20 +2,24 @@
   display: flex;
   width: 100%;
   border-radius: 15px;
+  text-align: left;
+ 
 }
 
 .left-partition {
-  background-color: #ebfaff; 
+  background-color: #ebfaff;
   width: 50%;
   padding: 10px;
-  border-radius: 15px;
+ 
+  border-bottom-left-radius: 15px;
 }
 
 .right-partition {
-  background-color: #f3fbfe; 
+  background-color: #f3fbfe;
   width: 50%;
   padding: 10px;
-  border-radius: 15px;
+  
+  border-bottom-right-radius: 15px;
 }
 
 .text-content {
@@ -27,7 +31,7 @@
 }
 
 .detailContent p {
-  margin: 0; 
+  margin: 0;
 }
 
 .LikeDislike {
@@ -52,7 +56,7 @@
   display: flex;
   align-items: center;
   width: 65%;
-  height: 5px; 
+  height: 5px;
   margin: 10px;
   margin-left: 40px;
   margin-right: 40px;
@@ -67,24 +71,24 @@
     #16ff17 60%,
     #16ff17 80%,
     #0ba80b 80%,
-    #0ba80b 100% 
+    #0ba80b 100%
   );
 }
 
 .horizontal-bar span {
-  padding: 0 10px; 
+  padding: 0 10px;
   font-size: large;
   font-weight: 1000;
   text-shadow: 2px;
 }
 
 .horizontal-bar span:first-child {
-  margin-left: -20px; 
+  margin-left: -20px;
   margin-top: -5px;
 }
 
 .horizontal-bar span:last-child {
-  margin-right: -25px; 
+  margin-right: -25px;
   margin-top: -3px;
 }
 
@@ -98,13 +102,13 @@
 .user-info {
   display: flex;
   align-items: center;
-  margin-top: 10px; 
+  margin-top: 10px;
 }
 
 .user-icon {
-  width: 30px; 
-  height: 30px; 
-  margin-right: 10px; 
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
   color: #86d7f8;
 }
 

@@ -1,20 +1,10 @@
-
-
 body {
- 
   margin: 0 auto;
   overflow: scroll;
   background: #d3cce3;
-  background: -webkit-linear-gradient(
-    to right,
-    #e9e4f0,
-    #d3cce3
-  ); 
-  background: linear-gradient(
-    to right,
-    #e9e4f0,
-    #d3cce3
-  ); 
+  background: -webkit-linear-gradient(to right, #e9e4f0, #d3cce3);
+  background: linear-gradient(to right, #e9e4f0, #d3cce3);
+  text-align: left;
 }
 :root {
   --mainColor: #f9faff;
@@ -35,7 +25,7 @@ header {
 
 .logo-text {
   background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
-
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 nav a {
@@ -75,7 +65,7 @@ nav {
   header nav {
     position: fixed;
     top: -100vh;
-    right: 0; 
+    right: 0;
     height: 100%;
     width: 50%;
     display: flex;
@@ -102,15 +92,14 @@ nav {
   }
 }
 
-
 header .nav-btn.minimize-btn {
-  margin-left: auto; 
-  margin-right: 1rem; 
+  margin-left: auto;
+  margin-right: 1rem;
 }
 
 .eye-icon {
   position: fixed;
-  top: calc(80px + 10px); 
+  top: calc(80px + 10px);
   right: 10px;
   z-index: 9999;
   color: #000;
@@ -118,13 +107,13 @@ header .nav-btn.minimize-btn {
 }
 
 .search-container {
-  margin-top: 50px; 
+  margin-top: 50px;
   text-align: center;
   height: 30px;
 }
 
 .search-content {
-  text-align: left; 
+  text-align: left;
   margin-left: 50px;
 }
 
@@ -133,9 +122,9 @@ header .nav-btn.minimize-btn {
   align-items: center;
 
   width: calc(100% - 100px);
-  max-width: calc(100% - 100px); 
-  margin: 10px 50px; 
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  max-width: calc(100% - 100px);
+  margin: 10px 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   overflow: hidden;
 }
@@ -162,7 +151,7 @@ header .nav-btn.minimize-btn {
 .horizontal-line {
   display: flex;
   align-items: center;
-  margin-top: 50px; 
+  margin-top: 50px;
   margin-left: 50px;
 }
 
@@ -171,13 +160,13 @@ header .nav-btn.minimize-btn {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #ffffff; 
+  background-color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid #add8e6; 
+  border: 2px solid #add8e6;
 
-  cursor: pointer; 
+  cursor: pointer;
   transition: background-color 0.3s, border-color 0.3s;
 }
 
@@ -187,14 +176,14 @@ header .nav-btn.minimize-btn {
 
 .icon {
   color: #02aff0;
-  font-size: 20px; 
+  font-size: 20px;
   transition: color 0.3s;
 }
 
 /* Style for active circles and icons */
 .circle.active {
-  background-color: #02aff0; 
-  border-color: #02aff0; 
+  background-color: #02aff0;
+  border-color: #02aff0;
 }
 
 .circle.active .icon {
@@ -206,15 +195,15 @@ header .nav-btn.minimize-btn {
   display: inline-block;
   height: 2px;
   margin: 0px;
-  width: 100px; 
+  width: 100px;
   background-color: #02aff0;
 }
 
 /* Style for the check mark icon */
 .tick {
   position: absolute;
-  top: 25px; 
-  left: 25px; 
+  top: 25px;
+  left: 25px;
   font-size: 25px;
-  color: #06e336; 
+  color: #06e336;
 }
