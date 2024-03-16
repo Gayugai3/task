@@ -30,6 +30,7 @@
   border-radius: 15px;
   max-height: 200px;
   overflow-y: auto;
+  text-align: left;
 }
 
 .popover-content::-webkit-scrollbar {
