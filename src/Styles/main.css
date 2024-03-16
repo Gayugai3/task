@@ -1,0 +1,220 @@
+
+
+body {
+ 
+  margin: 0 auto;
+  overflow: scroll;
+  background: #d3cce3;
+  background: -webkit-linear-gradient(
+    to right,
+    #e9e4f0,
+    #d3cce3
+  ); 
+  background: linear-gradient(
+    to right,
+    #e9e4f0,
+    #d3cce3
+  ); 
+}
+:root {
+  --mainColor: #f9faff;
+  --mainColorLight: #5767aa;
+  --secondaryColor: #db2b39;
+  --textColor: #090909;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  padding: 0 2rem;
+  background-color: var(--mainColor);
+  color: var(--textColor);
+}
+
+.logo-text {
+  background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+
+  -webkit-text-fill-color: transparent;
+}
+nav a {
+  margin: 0 1rem;
+  color: var(--textColor);
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--secondaryColor);
+}
+
+header .nav-btn {
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--textColor);
+  visibility: hidden;
+  opacity: 0;
+  font-size: 1.8rem;
+}
+
+header div,
+nav {
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  header .nav-btn {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  header nav {
+    position: fixed;
+    top: -100vh;
+    right: 0; 
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: var(--mainColor);
+    transition: 1s;
+  }
+
+  header .responsive_nav {
+    transform: translateY(100vh);
+  }
+
+  nav .nav-close-btn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+
+  nav a {
+    font-size: 1.5rem;
+  }
+}
+
+
+header .nav-btn.minimize-btn {
+  margin-left: auto; 
+  margin-right: 1rem; 
+}
+
+.eye-icon {
+  position: fixed;
+  top: calc(80px + 10px); 
+  right: 10px;
+  z-index: 9999;
+  color: #000;
+  cursor: pointer;
+}
+
+.search-container {
+  margin-top: 50px; 
+  text-align: center;
+  height: 30px;
+}
+
+.search-content {
+  text-align: left; 
+  margin-left: 50px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+
+  width: calc(100% - 100px);
+  max-width: calc(100% - 100px); 
+  margin: 10px 50px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.search-bar input[type="text"] {
+  flex: 1;
+  border: none;
+  padding: 8px;
+  height: 35px;
+}
+
+.search-bar button {
+  background-color: #ffffff;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  height: 50px;
+}
+
+.search-bar button:hover {
+  background-color: #e0e0e0;
+}
+
+.horizontal-line {
+  display: flex;
+  align-items: center;
+  margin-top: 50px; 
+  margin-left: 50px;
+}
+
+.circle {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ffffff; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #add8e6; 
+
+  cursor: pointer; 
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.circle:not(:last-child) {
+  margin-right: 0px;
+}
+
+.icon {
+  color: #02aff0;
+  font-size: 20px; 
+  transition: color 0.3s;
+}
+
+/* Style for active circles and icons */
+.circle.active {
+  background-color: #02aff0; 
+  border-color: #02aff0; 
+}
+
+.circle.active .icon {
+  color: #fafafa;
+}
+
+/* Horizontal line style */
+.line {
+  display: inline-block;
+  height: 2px;
+  margin: 0px;
+  width: 100px; 
+  background-color: #02aff0;
+}
+
+/* Style for the check mark icon */
+.tick {
+  position: absolute;
+  top: 25px; 
+  left: 25px; 
+  font-size: 25px;
+  color: #06e336; 
+}

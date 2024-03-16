@@ -1,0 +1,114 @@
+.divided-div-container {
+  display: flex;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.left-partition {
+  background-color: #ebfaff; 
+  width: 50%;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.right-partition {
+  background-color: #f3fbfe; 
+  width: 50%;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.text-content {
+  color: #bec9cd;
+}
+
+.detailContent {
+  font-size: small;
+}
+
+.detailContent p {
+  margin: 0; 
+}
+
+.LikeDislike {
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+.emoji-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80%;
+  padding-left: 20px;
+  padding-right: 80px;
+}
+
+.emoji-item {
+  font-size: 24px;
+}
+
+.horizontal-bar {
+  display: flex;
+  align-items: center;
+  width: 65%;
+  height: 5px; 
+  margin: 10px;
+  margin-left: 40px;
+  margin-right: 40px;
+  background: linear-gradient(
+    to right,
+    red 0%,
+    red 20%,
+    orange 20%,
+    orange 40%,
+    #ffd116 40%,
+    #ffd116 60%,
+    #16ff17 60%,
+    #16ff17 80%,
+    #0ba80b 80%,
+    #0ba80b 100% 
+  );
+}
+
+.horizontal-bar span {
+  padding: 0 10px; 
+  font-size: large;
+  font-weight: 1000;
+  text-shadow: 2px;
+}
+
+.horizontal-bar span:first-child {
+  margin-left: -20px; 
+  margin-top: -5px;
+}
+
+.horizontal-bar span:last-child {
+  margin-right: -25px; 
+  margin-top: -3px;
+}
+
+.bar {
+  flex: 1;
+  height: 100%;
+
+  background-color: transparent;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  margin-top: 10px; 
+}
+
+.user-icon {
+  width: 30px; 
+  height: 30px; 
+  margin-right: 10px; 
+  color: #86d7f8;
+}
+
+.user-name {
+  font-weight: bold;
+  font-size: 12px;
+}

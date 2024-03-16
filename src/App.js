@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { FaEye } from "react-icons/fa";
+import "./App.css";
+import Navbar from "./components/Navbar";
+import Searchbar from "./components/Searchbar";
+import HorizontalLineWithCircles from "./components/HorizontalLineWithCircles";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <FaEyeIcon />
+      <Searchbar />
+      <HorizontalLineWithCircles />
+    </>
   );
 }
 
+const FaEyeIcon = () => (
+  <div className="eye-icon">
+    <FaEye style={{ fontSize: "30px" }} /> 
+  </div>
+);
 export default App;

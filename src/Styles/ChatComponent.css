@@ -1,0 +1,88 @@
+/* ChatComponent.css */
+.chat-component {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chat-bubbles-section,
+.option-buttons-section {
+  flex-grow: 1;
+  width: min-content;
+}
+
+.chat-bubbles-section {
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.section1,
+.section2 {
+  display: flex;
+  align-items: center;
+}
+.icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #007bff;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.roboicon {
+  color: white;
+  font-size: 20px;
+}
+
+.usericon {
+  color: white;
+  font-size: 20px;
+}
+
+.chat-bubble {
+  position: relative;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+  flex-grow: 1;
+}
+
+.chat-bubble::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-top: 8px solid transparent;
+  border-right: 10px solid #f0f0f0;
+  border-bottom: 8px solid transparent;
+}
+
+.option-buttons-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.option-button {
+  background-color: transparent;
+  color: #007bff;
+  padding: 10px 10px;
+  margin-top: 5px;
+  border: 2px solid #007bff;
+  border-radius: 50px;
+  cursor: pointer;
+  height: 30px;
+  line-height: 1px;
+  font-weight: 30px;
+}
+
+.option-button:hover {
+  background-color: #007bff;
+  color: #fff;
+}
